@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+</head>
+
+<body>
+    <Script>
+        let input = [1, 3, 3, 5, 7, 7, 8, 3]
+        console.log(`input: ${input}`);
+
+        let count = {};
+        let maxCount = 0;
+        let maxCountValue;
+        for (let i = 0; i < input.length; i++) {
+            let value = input[i];
+            if (!count[value]) {
+                count[value] = 1;
+            } else {
+                count[value]++;
+            }
+            if (count[value] > maxCount) {
+                maxCount = count[value]
+                maxCountValue = value;
+            }
+        }
+        console.log(`${maxCountValue} xuất hiện nhiều nhất ${maxCount} lần`);
+    </Script>
+</body>
+
+</html>

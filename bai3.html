@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+
+<body>
+    <script>
+        let input = "co gang hoc lap trinh";
+        console.log(`Input = ${input}`);
+        let s = input.split(" ");
+        for (let i = 0; i < s.length; i++) {
+            s[i] = s[i].charAt(0).toUpperCase() + s[i].slice(1);
+        }
+        console.log(`Output = ${s.join(" ")}`);
+    </script>
+</body>
+
+</html>
